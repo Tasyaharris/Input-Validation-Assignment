@@ -10,9 +10,9 @@ function validateForm() {
     var shphone = document.getElementById('hphone').value;
 
     var snameRGEX = /^[^0-9]*$/;
-    var smatricRGEX = /^[0-9]{6,6}$/; 
-    var scaddressRGEX = /^.{0,50}$/;
-    var shaddressRGEX = /^.{0,50}$/;
+    var smatricRGEX = /^[0-9]{7,7}$/; 
+    var scaddressRGEX = /^.{0,100}$/;
+    var shaddressRGEX = /^.{0,100}$/;
     var semailRGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     var sphoneREGEX = /^\+?[0-9]{1,3}[-. (]*([0-9]{1,3})[-. )]*([0-9]{2,4})[-. ]*([0-9]{4})$/;
     var shphoneREGEX = /^\+?[0-9]{1,3}[-. (]*([0-9]{1,3})[-. )]*([0-9]{2,4})[-. ]*([0-9]{4})$/;

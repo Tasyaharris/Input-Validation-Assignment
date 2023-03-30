@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>Client-Side Input Validation</title>
+    <style>
+		label{
+      width :240px;
+      display : inline-block;
+    }
+    
+	</style>
   </head>
   <body>
     <h1>A. Student Details</h1>
@@ -11,16 +18,15 @@
             <br><br>
   
             <label for="matric">Matric No : </label>
-            <input type="number" name="matric" id="matric" required>
+            <input type="text" name="matric" id="matric" required>
             <br><br>
 
-            
             <label for="caddress">Current Address : </label>
-            <input type="text" name="caddress" id="caddress" required>
+            <textarea id="caddress" name="caddress"></textarea>
             <br><br>
 
             <label for="haddress">Home Address : </label>
-            <input type="text" name="haddress" id="haddress" required>
+            <textarea id="haddress" name="haddress"></textarea>
             <br><br>
 
             <label for="email">Email (Gmail Account) : </label>
@@ -37,6 +43,8 @@
             <button type="submit" onclick="validateForm()">Submit</button>
     </form>
     
+  
+
     <script src="validateform.js"></script>
   </body>
 </html>
