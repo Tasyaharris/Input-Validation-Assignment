@@ -23,10 +23,10 @@ session_start();
             }// save to database
              else{
 
-                $id = random_num(20);
+                //$id = random_num(20);
                 $username = $username;
                 $password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-                $query = "INSERT INTO users (id, username, password) value ('$id', '$username', '$password')";
+                $query = "INSERT INTO users ( username, password) value ('$username', '$password')";
                 mysqli_query($conn, $query);
 
                 header("Location: login.php");

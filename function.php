@@ -2,10 +2,10 @@
 
 function check_login($conn)
 {
-    if(isset($_SESSION['id']))
+    if(isset($_SESSION['username']))
     {
-        $id = $_SESSION['id'];
-        $query = "select * from users where id = '$id' limit 1";
+        $id = $_SESSION['username'];
+        $query = "select * from users where username = '$username' limit 1";
     
         $result = mysqli_query($conn, $query);
         if($result && mysqli_num_rows($result)> 0 )
@@ -21,19 +21,6 @@ function check_login($conn)
    
 }
 
-function random_num($length)
-{
-    $text = " ";
-    if($length < 5 )
-    {
-        $length =5; 
-    }
 
-    $len = rand(4, $length);
-    for ($i = 0 ; $i < $len ; $i++){
-        #code
-        $text.= rand(0,9);
-        return $text;
-    }
-}
+
 ?>
