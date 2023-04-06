@@ -29,14 +29,15 @@ session_start();
                 $query = "INSERT INTO users ( username, password) value ('$username', '$password')";
                 mysqli_query($conn, $query);
 
+
                 header("Location: login.php");
                 die;
 
-                }
-            }// if the input box is empty
+                } 
+            }// if the input box is empty 
             else
             {
-            echo "Please fill in username and password";
+            echo  "Please fill in username and password";
             }
         }
     
